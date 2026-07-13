@@ -91,7 +91,9 @@ class Tla extends BaseApi {
 			avatar: user.profileImageURL,
 			role: this.getRole(user.roles),
 			banned: response?.data.banned?.reason || '',
-			isLive: Boolean(user.stream?.createdAt)
+			isLive: Boolean(user.stream?.createdAt),
+			isPartner: user.roles.isPartner,
+			isAffiliate: user.roles.isAffiliate
 		};
 	}
 
