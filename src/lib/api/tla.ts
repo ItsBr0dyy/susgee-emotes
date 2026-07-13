@@ -308,7 +308,9 @@ class Tla extends BaseApi {
 					avatar: '',
 					role: '',
 					banned: '',
-					isLive: false
+					isLive: false,
+					isPartner: false,
+					isAffiliate: false
 				};
 			}
 		}
